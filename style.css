@@ -1,0 +1,182 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+ background-color: #f5efff; 
+ text-align: center;
+ justify-content: center;
+}
+
+main {
+ margin-top: 0; 
+ margin-bottom: 0; 
+ margin-right: 20%; 
+ margin-left: 20%
+}
+ 
+/* STYLE TEXT */
+
+#mainM {
+  font-family: 'Cormorant SC', serif;
+  padding: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+.source {
+  text-align:left;
+  padding-bottom: 30px;
+}
+
+.sourceH {
+  text-align:left;
+}
+
+p {
+  font-family: 'Cormorant SC', serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Indie Flower', cursive;
+  padding-top: 20px;
+  font-size: 40px;
+  color: #3e1818;
+  border-style: none none dotted none ;
+}
+
+ol {
+  text-align: center;
+  font-size: 25px;
+  padding: 35px;
+}
+
+#dSite {
+  padding: 35px;
+  font-size: 30px;
+}
+
+/* STYLE IMAGES */
+
+img {
+ width: 100%;
+}
+
+.head {
+ display: flex;
+ justify-content: space-around;
+} 
+
+.menHealth {
+  width: 70%;
+  height: 20%;
+  padding-bottom: 30px;
+}
+
+
+/* STYLE NAV BAR */
+nav {
+  position: sticky;
+  top:0;
+}
+
+.navul {
+  list-style-type: none;
+  padding: 20px 16px;
+  background-color: #e5625e;
+  text-align: center;
+  overflow: hidden; 
+}
+
+.navlist {
+  display: inline;
+  font-size:130%;
+}
+
+.navA {
+  padding: 14px 16px;
+  text-style:none;
+  text-decoration: none; 
+  color: rgb(224, 239, 222);
+}
+
+.navA:hover {
+  background-color: #dda9a7;
+}
+
+/* STYLE BUTTONS */
+button { 
+  margin-top: 5px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20%;
+  border-style: outset;
+  border-width: 4px;
+  border-color: #e5625e;
+  font-family: 'Xanh Mono', monospace;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 #1b0404, 0 17px 50px 0 #9a7a79;
+}
+
+
+
+/* ADD MORE! */
+
+/* Donate */
+#donate {
+  background-image: url("assets/donate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#dBtn {
+  padding: 15px;
+  margin: 30px;
+}
+
+/* fact */
+.fact {
+  background: #e5625e;
+  border-radius: 10px;
+  border-style: none;
+  padding: 15px;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* responsive */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexItem {
+  flex-basis: 100%;
+  margin: 1%;
+}
+
+@media screen and (max-width: 850px) {
+  .flex-container {
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  
+  p, h3, #mainM, .source, button, img, ol {
+    font-size: 90%;
+  }
+
+  #donate {
+    background-repeat: repeat;
+  }
+  
+}
+
+~
